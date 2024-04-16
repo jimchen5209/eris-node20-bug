@@ -54,6 +54,32 @@ bot.registerCommand('leave', (context) => {
     botVoice.disconnect()
 }, { description: 'Leave the voice channel.', guildOnly: true })
 
+bot.registerCommand('play-opus', (context) => {
+    if (!context.guildID || !context.member) return
+
+    const guildId = context.member.guild.id
+    const botVoice = bot.voiceConnections.get(guildId)
+
+    if (!botVoice) {
+        return 'I\'m not in a voice channel!'
+    }
+
+    botVoice.play('./audio/fdd0c99fff6f8df7f651532526f4b317.opus', { format: 'ogg', inlineVolume: true })
+}, { description: 'Play the example opus file.', guildOnly: true })
+
+bot.registerCommand('play-pcm', (context) => {
+    if (!context.guildID || !context.member) return
+
+    const guildId = context.member.guild.id
+    const botVoice = bot.voiceConnections.get(guildId)
+
+    if (!botVoice) {
+        return 'I\'m not in a voice channel!'
+    }
+
+    botVoice.play('./audio/c22e51e4e5b18ed05222f1d6e9968136.pcm', { format: 'pcm', inlineVolume: true })
+}, { description: 'Play the example pcm file.', guildOnly: true })
+
 bot.on('debug', (message) => {
     console.debug(`Debug from bot: ${message}`)
 })
