@@ -1,4 +1,15 @@
 {
   "name": "eris-node20-bug",
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "scripts": {
+    "build": "tsc --pretty",
+    "build:prod": "tsc --pretty --sourceMap false"
+  },
+  "dependencies": {
+    "eris": "^0.17.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
 }
