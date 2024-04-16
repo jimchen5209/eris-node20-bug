@@ -2,6 +2,7 @@
   "name": "eris-node20-bug",
   "packageManager": "yarn@4.1.1",
   "scripts": {
+    "start": "node dist",
     "build": "tsc --pretty",
     "build:prod": "tsc --pretty --sourceMap false"
   },
