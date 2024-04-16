@@ -7,7 +7,7 @@
     "build:prod": "tsc --pretty --sourceMap false"
   },
   "dependencies": {
-    "eris": "^0.17.2"
+    "eris": "abalabahaha/eris#dev"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",

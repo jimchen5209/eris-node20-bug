@@ -19,14 +19,14 @@ __metadata:
   resolution: "eris-node20-bug@workspace:."
   dependencies:
     "@types/node": "npm:^20.12.7"
-    eris: "npm:^0.17.2"
+    eris: "abalabahaha/eris#dev"
     typescript: "npm:^5.4.5"
   languageName: unknown
   linkType: soft
 
-"eris@npm:^0.17.2":
+"eris@abalabahaha/eris#dev":
   version: 0.17.2
-  resolution: "eris@npm:0.17.2"
+  resolution: "eris@https://github.com/abalabahaha/eris.git#commit=7524a402d8e04a35c5d51fd03c4820f7313983cf"
   dependencies:
     opusscript: "npm:^0.0.8"
     tweetnacl: "npm:^1.0.3"
@@ -36,7 +36,7 @@ __metadata:
       optional: true
     tweetnacl:
       optional: true
-  checksum: 10c0/74608d0daea43c34baffc1a44000703e06e37ed6fb26388c5f8e84aee7e635efceb1871af0bb8fcb523df2a7ed5577975db9cef08f173406f8d5e57bd43fc697
+  checksum: 10c0/c478167064fe847cf196ed56ed0e91994ded074ae9e0b7053131847c19b88830bd361d30e3f34583c6a9178a29c010fdbe270b6c0ae26b32b5515212ea3a9a0d
   languageName: node
   linkType: hard
 
